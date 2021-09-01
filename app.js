@@ -18,7 +18,7 @@ const curenciesRoute = require('./routes/currencies')
 app.use('/currencies', curenciesRoute)
 
 app.get('/', (req,res) => {
-    res.redirect('/currencies');
+    res.send('Lokki');
 });
 
 app.listen(PORT, () => {
