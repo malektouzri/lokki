@@ -17,9 +17,6 @@ const curenciesRoute = require('./routes/currencies')
 
 app.use('/currencies', curenciesRoute)
 
-app.get('/', (req,res) => {
-    res.send('Lokki');
-});
 
 app.listen(PORT, () => {
     console.log(`Server listening on ${PORT}`);
